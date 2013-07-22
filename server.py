@@ -7,7 +7,7 @@ UDP_IP = "127.0.0.1"
 UDP_PORT = 5005
 #file info
 CHUNK_SIZE = 100
-WINDOW_SIZE = 2
+WINDOW_SIZE = 5
 SEND_FILE = "myfile.txt" #file name which going to send
 
 #ACKS

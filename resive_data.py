@@ -3,6 +3,7 @@ global ffname
 global sq
 
 error_ratio = 0.5
+print("Original error "+ str(error_ratio))
 
 def error_or_not():
     ra = random.randrange(0,int(sq))
@@ -13,7 +14,7 @@ def error_or_not():
 def error(dict,seqnumber):    #simple error checking
     for i,j in dict.items():
         for p,q in j.items():
-            if( p == q.__hash__() and (seqnumber == i)):
+            if( p == q.__hash__() and (seqnumber == i)):#check error using hash value and fram
                # simulation error using uniform distributuion
                 if(error_or_not()):
                    return False
