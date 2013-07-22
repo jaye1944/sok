@@ -15,8 +15,8 @@ def error(dict,seqnumber):    #simple error checking
         for p,q in j.items():
             if( p == q.__hash__() and (seqnumber == i)):
                # simulation error using uniform distributuion
-                #if(error_or_not()):
-                   #return False
+                if(error_or_not()):
+                   return False
                 return True
     return False
 
