@@ -2,11 +2,11 @@ import random
 global ffname
 global sq
 
-error_ratio = 0.000000
+error_ratio = 0.5
 
 def error_or_not():
     ra = random.randrange(0,int(sq))
-    if(ra <= sq*error_ratio):
+    if(ra < sq*error_ratio):
         return True
     return False
 
@@ -25,6 +25,7 @@ def writer(or_file):
     for i in or_file:
         f.write(i)
     f.close()
+   # os.remove(f)
 
 def datapart(dict):
     for i,j in dict.items():
