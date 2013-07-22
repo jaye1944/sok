@@ -20,9 +20,9 @@ def error(dict,seqnumber):    #simple error checking
                 return True
     return False
 
-def writer(orfile):
+def writer(or_file):
     f = open(ffname, 'wb')
-    for i in orfile:
+    for i in or_file:
         f.write(i)
     f.close()
 
