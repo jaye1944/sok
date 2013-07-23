@@ -1,3 +1,4 @@
+
 from threading import Thread
 from time import sleep
 
@@ -10,8 +11,7 @@ def stop_function(arg):
     while True:
         id = input("Do you want to stop : ")
         if (id == "y"):
-            thread1._stop()
-
+            arg._stop()
             break
         print("running")
 
