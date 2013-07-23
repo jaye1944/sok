@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce5abe45-6396-4714-9948-697a0c875eed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/socket.iml" afterPath="$PROJECT_DIR$/.idea/socket.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sttob.py" afterPath="$PROJECT_DIR$/sttob.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -11,8 +9,8 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/resiver.py" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374241521362" ignored="false" />
     <file path="/server.py" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1373818331388" ignored="false" />
-    <file path="/sttob.py" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374554540819" ignored="false" />
-    <file path="/Dummy.txt" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374553921745" ignored="false" />
+    <file path="/sttob.py" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374555370652" ignored="false" />
+    <file path="/Dummy.txt" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374555280418" ignored="false" />
     <file path="/resive_data.py" changelist="ce5abe45-6396-4714-9948-697a0c875eed" time="1374504424876" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,7 @@
       <file leaf-file-name="sttob.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sttob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="282" selection-end="282" vertical-scroll-proportion="0.33163264">
+            <state line="23" column="1" selection-start="509" selection-end="509" vertical-scroll-proportion="0.5867347">
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -360,13 +358,18 @@
       <created>1374504765314</created>
       <updated>1374504765314</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="printing original error">
+      <created>1374555314193</created>
+      <updated>1374555314193</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -381,7 +384,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -554,7 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sttob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="282" selection-end="282" vertical-scroll-proportion="0.33163264">
+        <state line="23" column="1" selection-start="509" selection-end="509" vertical-scroll-proportion="0.5867347">
           <folding>
             <element signature="e#1#29#0" expanded="true" />
           </folding>

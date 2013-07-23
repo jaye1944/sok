@@ -21,6 +21,3 @@ thread1 = Thread(target = threaded_function, args = (100, ))
 thread1.start()
 thread = Thread(target = stop_function, args = (thread1, ))
 thread.start()
-
-#thread.join()
-print("thread finished...exiting")
