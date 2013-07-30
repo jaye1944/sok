@@ -41,9 +41,10 @@ print("File number of chunks are " + alldata[1])
 print("File chunk size is " + alldata[2] + " bytes")
 print("File Window size is " + alldata[3])
 #make environment
+WINDOW_SIZE = int(alldata[3])
+NO_OF_CH = int(alldata[1])
 resive_data.ffname = alldata[0] +"1"
 resive_data.sq = math.sqrt(int(alldata[1])) #pass sqrt of chunk to uniform distributin
-count_packets = 0 #which packets
 pac_in_window = 0 #number in window pac
 window_count = 0 #which window
 global lock      #use to lock the errorless list from error list
@@ -54,7 +55,6 @@ error_free = 0 # how many error free packets resived
 
 #send ack for ready
 sock.sendto(ACKPOSITIVE.encode('utf-8'), (UDP_IP, 5005))
-error_list = [] #this list include all error packets in one window
 start = time.time()
 
 while True:
@@ -64,23 +64,23 @@ while True:
     if resive_data.error(get_packet,pac_in_window-1):#check the errors
         error_free += 1
         if(lock):# can add data to array
-            count_packets +=1
             original_file.append(resive_data.datapart(get_packet))
-            if(count_packets == int(alldata[1])):#comaire error free packets with how many actual packets
+            if(len(original_file) == NO_OF_CH ):#comaire error free packets with how many actual packets
                 end = time.time()# now file transfer is over
                 resive_data.print_All(str(end - start),actual_errors,error_free)#print results
                 resive_data.writer(original_file)#create a file
                 break
     else:
+        if(lock):
+            error_in_pac = resive_data.window_number(get_packet) #get the first error packet
         lock = False    #ignore all data after the error
         actual_errors +=1
-        error_list.append(resive_data.window_number(get_packet))
-    if(pac_in_window == int(alldata[3])):#check window size
+    if(pac_in_window == WINDOW_SIZE):#check window size
         window_count +=1
         if(lock):
             window_Ack(ACKPOSITIVE) # + Ack
         else:
-            window_Ack(str(-min(error_list)))#- Ack with wrong window number
+            window_Ack(str(error_in_pac))#- Ack with wrong window number
             error_list = [] #free the list
             lock = True
         pac_in_window = 0
